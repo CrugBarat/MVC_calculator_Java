@@ -10,7 +10,13 @@ A simple addition calculator built using:
 
 # Setup
 
+- Download/Clone the files
 
+- In Terminal, navigate to /out/production/MVC_calculator_Java and run:
+
+```
+java MVCCalculator
+```
 
 ---
 
