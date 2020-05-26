@@ -1,11 +1,11 @@
 import java.awt.event.ActionListener;
 
-//import swing components to build interface
+//import swing for components to build interface
 import javax.swing.*;
 
 public class CalculatorView extends JFrame {
 
-  //use components to build interface
+  //build interface
 	private JTextField firstNumber  = new JTextField(10);
 	private JLabel additionLabel = new JLabel("+");
 	private JTextField secondNumber = new JTextField(10);
@@ -13,7 +13,7 @@ public class CalculatorView extends JFrame {
 	private JTextField calcSolution = new JTextField(10);
 
 
-	//set up the view by adding components
+	//set up the view and add components
   CalculatorView(){
 
     //add interface panel
@@ -34,6 +34,23 @@ public class CalculatorView extends JFrame {
 
     //add panel to view
 		this.add(calcPanel);
+	}
+
+  //access inputs - parse to int as entered as string from JTextField
+  public int getFirstNumber(){
+		return Integer.parseInt(firstNumber.getText());
+	}
+
+	public int getSecondNumber(){
+		return Integer.parseInt(secondNumber.getText());
+	}
+
+	public int getCalcSolution(){
+		return Integer.parseInt(calcSolution.getText());
+	}
+
+	public void setCalcSolution(int solution){
+		calcSolution.setText(Integer.toString(solution));
 	}
 
 }
