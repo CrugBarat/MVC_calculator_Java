@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class CalculatorView extends JFrame {
 
-  //build interface
+  //build interface with components
 	private JTextField firstNumber  = new JTextField(10);
 	private JLabel additionLabel = new JLabel("+");
 	private JTextField secondNumber = new JTextField(10);
@@ -52,5 +52,15 @@ public class CalculatorView extends JFrame {
 	public void setCalcSolution(int solution){
 		calcSolution.setText(Integer.toString(solution));
 	}
+
+  //add listener to calc button
+  void addCalculateListener(ActionListener listenForCalcButton){
+    calculateButton.addActionListener(listenForCalcButton);
+  }
+
+  //add error message
+  void displayErrorMessage(String errorMessage){
+    JOptionPane.showMessageDialog(this, errorMessage);
+  }
 
 }
