@@ -12,6 +12,10 @@ A simple addition calculator built using:
 
 - Download/Clone the files
 
+- Open in IntelliJ or similar
+
+- Run build
+
 - In Terminal, navigate to /out/production/MVC_calculator_Java and run:
 
 ```
